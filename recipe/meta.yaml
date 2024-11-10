@@ -55,7 +55,6 @@ requirements:
   host:
     - libgl-devel                        # [linux]
     - libegl-devel                       # [linux]
-    - libopengl-devel                    # [linux]
     - libdrm                             # [linux]
     - python
     - packaging
@@ -79,9 +78,8 @@ requirements:
     - xorg-libxdamage                    # [linux]
     - xorg-libsm                         # [linux]
     - xorg-libice                        # [linux]
-    - xorg-libxcomposite                 # [linux]
     - xorg-libxxf86vm                    # [linux]
-    - xorg-xf86vidmodeproto              # [linux]
+    - xorg-xorgproto                     # [linux]
   run:
     - python
 
