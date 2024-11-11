@@ -56,6 +56,7 @@ requirements:
   host:
     - libglvnd-devel                     # [linux]
     - libglx-devel                       # [linux]
+    - libopengl-devel                    # [linux]
     - libgl-devel                        # [linux]
     - libegl-devel                       # [linux]
     - libdrm                             # [linux]
