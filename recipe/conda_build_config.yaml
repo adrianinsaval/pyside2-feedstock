@@ -5,3 +5,5 @@ cxx_compiler_version:      # [osx]
   - 17                     # [osx]
 c_stdlib_version:          # [linux]
   - 2.17                   # [linux]
+channel_targets:
+- freecad main

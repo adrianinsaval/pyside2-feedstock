@@ -13,5 +13,5 @@ github:
 os_version:
   linux_64: cos7
 provider:
-  linux_aarch64: azure
+  linux: github_actions
 test: native_and_emulated
