@@ -35,6 +35,10 @@ build:
     - pyside2-designer = PySide2.scripts.pyside_tool:designer
     - pyside2-rcc = PySide2.scripts.pyside_tool:rcc
     - pyside2-uic = PySide2.scripts.pyside_tool:uic
+  ignore_run_exports:
+    # make it optional. Use the constraints on qt-main
+    # and qt to ensure that qt-webengine is correctly installed
+    - qt-webengine
 
 requirements:
   build:
@@ -42,6 +46,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - pyside2  {{ version }}                 # [build_platform != target_platform]
     - qt-main  {{ version }}                 # [build_platform != target_platform]
+    - qt-webengine  5.15.15           # [build_platform != target_platform]
     - cmake
     - ninja
     - {{ compiler('c') }}
@@ -55,6 +60,7 @@ requirements:
     - python
     - packaging
     - qt-main       {{ version }}
+    - qt-webengine  5.15.15
     - libxml2
     - libxslt
     - pip
@@ -107,6 +113,8 @@ test:
     - PySide2.QtTextToSpeech
     - PySide2.QtUiTools
     - PySide2.QtWebChannel
+    - PySide2.QtWebEngineCore
+    - PySide2.QtWebEngineWidgets
     - PySide2.QtWebSockets
     - PySide2.QtWidgets
     - PySide2.QtXml
@@ -129,6 +137,7 @@ test:
 
   requires:
     - pip
+    - qt-webengine
 
 about:
   home: https://wiki.qt.io/PySide2
