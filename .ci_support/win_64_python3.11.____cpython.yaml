@@ -3,9 +3,9 @@ c_compiler:
 c_stdlib:
 - vs
 channel_sources:
-- conda-forge
+- freecad,conda-forge
 channel_targets:
-- conda-forge main
+- freecad main
 cxx_compiler:
 - vs2019
 libxml2:
