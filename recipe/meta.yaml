@@ -46,7 +46,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - pyside2  {{ version }}                 # [build_platform != target_platform]
     - qt-main  {{ version }}                 # [build_platform != target_platform]
-    - qt-webengine  5.15.15           # [build_platform != target_platform]
+    - qt-webengine  {{ version }}            # [build_platform != target_platform]
     - cmake
     - ninja
     - {{ compiler('c') }}
@@ -60,7 +60,7 @@ requirements:
     - python
     - packaging
     - qt-main       {{ version }}
-    - qt-webengine  5.15.15
+    - qt-webengine  {{ version }}
     - libxml2
     - libxslt
     - pip
