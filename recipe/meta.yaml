@@ -45,8 +45,8 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - pyside2  {{ version }}                 # [build_platform != target_platform]
-    - qt-main  {{ version }}                 # [build_platform != target_platform]
-    - qt-webengine  {{ version }}            # [build_platform != target_platform]
+    - qt-main  5.15.16                 # [build_platform != target_platform]
+    - qt-webengine  5.15.16            # [build_platform != target_platform]
     - cmake
     - ninja
     - {{ compiler('c') }}
@@ -60,8 +60,8 @@ requirements:
     - libdrm                             # [linux]
     - python
     - packaging
-    - qt-main       {{ version }}
-    - qt-webengine  {{ version }}
+    - qt-main       5.15.16
+    - qt-webengine  5.15.16
     - libxml2
     - libxslt
     - pip
