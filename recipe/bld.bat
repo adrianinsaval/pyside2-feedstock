@@ -5,6 +5,7 @@ cd %SRC_DIR%\sources\shiboken2
 mkdir build && cd build
 
 cmake -LAH -G"NMake Makefiles"                               ^
+    -DCMAKE_POLICY_VERSION_MINIMUM=3.5                       ^
     -DCMAKE_PREFIX_PATH="%LIBRARY_PREFIX%"                   ^
     -DCMAKE_INSTALL_PREFIX="%LIBRARY_PREFIX%"                ^
     -DPYTHON_SITE_PACKAGES="%SP_DIR:\=/%"                    ^
@@ -25,6 +26,7 @@ cd %SRC_DIR%\sources\pyside2
 mkdir build && cd build
 
 cmake -LAH -G"NMake Makefiles"                               ^
+    -DCMAKE_POLICY_VERSION_MINIMUM=3.5                       ^
     -DCMAKE_PREFIX_PATH="%LIBRARY_PREFIX%"                   ^
     -DCMAKE_INSTALL_PREFIX="%LIBRARY_PREFIX%"                ^
     -DPYTHON_SITE_PACKAGES="%SP_DIR:\=/%"                    ^
@@ -47,6 +49,7 @@ cd %SRC_DIR%\sources\pyside2-tools
 mkdir build && cd build
 
 cmake -LAH -G"NMake Makefiles"                               ^
+    -DCMAKE_POLICY_VERSION_MINIMUM=3.5                       ^
     -DCMAKE_PREFIX_PATH="%LIBRARY_PREFIX%"                   ^
     -DCMAKE_INSTALL_PREFIX="%LIBRARY_PREFIX%"                ^
     -DSITE_PACKAGE="%SP_DIR:\=/%"                            ^

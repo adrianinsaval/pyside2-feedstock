@@ -35,6 +35,7 @@ pushd sources/shiboken2
 mkdir -p build && cd build
 
 cmake -LAH -G "Ninja" ${CMAKE_ARGS} \
+  -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
   -DCMAKE_PREFIX_PATH=${PREFIX} \
   -DCMAKE_INSTALL_PREFIX=${PREFIX} \
   -DCMAKE_BUILD_TYPE=Release \
@@ -52,6 +53,7 @@ pushd sources/pyside2
 mkdir -p build && cd build
 
 cmake -LAH -G "Ninja" ${CMAKE_ARGS} \
+  -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
   -DCMAKE_PREFIX_PATH=${PREFIX} \
   -DCMAKE_INSTALL_PREFIX=${PREFIX} \
   -DCMAKE_BUILD_TYPE=Release \
@@ -82,6 +84,7 @@ pushd sources/pyside2-tools
 mkdir -p build && cd build
 
 cmake -LAH -G "Ninja" ${CMAKE_ARGS} \
+  -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
   -DCMAKE_PREFIX_PATH=${PREFIX} \
   -DCMAKE_INSTALL_PREFIX=${PREFIX} \
   -DCMAKE_BUILD_TYPE=Release \
