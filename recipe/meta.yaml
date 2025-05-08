@@ -117,8 +117,8 @@ test:
     - PySide2.QtTextToSpeech
     - PySide2.QtUiTools
     - PySide2.QtWebChannel
-    - PySide2.QtWebEngineCore
-    - PySide2.QtWebEngineWidgets
+    - PySide2.QtWebEngineCore     # [py==310]
+    - PySide2.QtWebEngineWidgets  # [py==310]
     - PySide2.QtWebSockets
     - PySide2.QtWidgets
     - PySide2.QtXml
@@ -141,7 +141,7 @@ test:
 
   requires:
     - pip
-    - qt-webengine
+    - qt-webengine   # [py==310]
 
 about:
   home: https://wiki.qt.io/PySide2
