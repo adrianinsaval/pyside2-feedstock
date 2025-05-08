@@ -54,6 +54,7 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ stdlib('c') }}
     - clangdev >=9
+    - {{ cdt('xorg-x11-server-xvfb') }}  # [linux]
   host:
     - libgl-devel                        # [linux]
     - libegl-devel                       # [linux]
