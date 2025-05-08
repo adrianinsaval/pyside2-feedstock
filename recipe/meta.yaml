@@ -25,7 +25,8 @@ source:
     - patches/install_pyi.patch
 
     # https://bugreports.qt.io/browse/PYSIDE-2187
-    - patches/gluint.patch
+    - patches/gluint.patch  # [osx]
+    - patches/build-tests.patch
 
 build:
   number: 0
