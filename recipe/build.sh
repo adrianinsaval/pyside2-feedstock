@@ -78,7 +78,7 @@ rm ${SP_DIR}/testbinding*.so
 popd
 
 ${PYTHON} setup.py dist_info --build-type=pyside2
-cp -r PySide2-${PKG_VERSION}.dist-info "${SP_DIR}"/
+cp -r pyside2-${PKG_VERSION}.dist-info "${SP_DIR}"/
 
 pushd sources/pyside2-tools
 mkdir -p build && cd build
